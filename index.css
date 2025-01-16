@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Softer shadow with transparency */
+    position: fixed;
+    z-index: 1;
+    padding: 0.7%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main a {
+    color: black;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 3px solid orange;
+    padding: 5px;
+    background-color: yellow;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    border-radius: 10px;
+}
+
+.sub1 {
+    font-size: 5vh;
+    padding: 2%;
+}
+
+.img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid skyblue;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 10px skyblue;
+    border-radius: 100%;
+    margin-top: -10%;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller desktops (width <= 768px) */
+@media (max-width: 768px) {
+    .sub1 {
+        font-size: 4vh;
+    }
+
+    .img {
+        width: 30%;
+        max-width: 200px;
+    }
+
+    .main {
+        padding: 1%;
+    }
+}
+
+/* For mobile devices (width <= 480px) */
+@media (max-width: 480px) {
+    .sub1 {
+        font-size: 3.5vh;
+    }
+
+    .img {
+        width: 50%;
+        max-width: 150px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .main a {
+        font-size: 90%;
+    }
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:darkblue;
+    color:aliceblue;
+    padding: 20vh 5vw;
+    text-shadow: 1px 2px 3px black;
+    
+}
+
+.sub1 .a {
+    font-size: 50%;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 1%;
+    background-color: white;
+    text-shadow: none;
+   
+}
+.sub1 .b{
+    font-size: 50%;
+    text-decoration: none;
+    color:black;
+    border: 3px solid greenyellow;
+    padding: 2%;
+    background-color:darkorange;
+    border-radius:20px 20px 20px 20px;
+    text-shadow: none;
+}
+.sub1 .a:hover{
+    background-color:green;
+    padding: 1vw;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: solid;
+    color: azure;   
+}
+.projects{
+   background-color:darkblue;
+   text-align: center;
+   padding: 1%;
+   color: aliceblue;
+   font-size:xx-large;
+     
+}
+.skills {
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    background-color: darkgray;
+    padding: 10px 0;
+}
+
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container for layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    min-height: 100vh;
+    background-color: darkblue;
+    flex-wrap: wrap;
+}
+
+/* Styling for each skill box */
+.skill-box {
+    width: 22%; /* Percentage based width */
+    padding: 5%;
+    margin: 2%;
+    background-color: forestgreen;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Hover effect on each skill box */
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+.skill-box h3 {
+    color: #333;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Progress bar container */
+.progress-container {
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.html { background-color: #ff6347; }
+.css { background-color: #32cd32; }
+.js { background-color: #1e90ff; }
+.python { background-color: #ff8c00; }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the skill boxes vertically */
+        padding: 5%;
+    }
+
+    .skill-box {
+        width: 80%; /* Increase width for better readability */
+        margin: 10px 0;
+    }
+
+    .skills {
+        font-size: x-large;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 3%;
+    }
+
+    .skill-box {
+        width: 100%; /* Full width for mobile screens */
+        margin: 5% 0;
+    }
+
+    .skills {
+        font-size: large;
+        padding: 5px 0;
+    }
+
+    .progress-bar {
+        height: 15px;
+        line-height: 15px;
+        font-size: small;
+    }
+}
+
+#about {
+    display: flex;
+    background-color: darkblue;
+    padding: 12%;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2%;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+}
+
+#about div img {
+    border-radius: 10vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Ensures the image scales well */
+    max-width: 300px; /* Limits the image size */
+    height: auto;
+}
+
+#about div {
+    max-width: 45%;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    #about {
+        padding: 8%;
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center;
+    }
+    #about div {
+        max-width: 80%;
+        text-align: center; /* Centers text for better readability */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    #about {
+        padding: 5%;
+    }
+    #about div img {
+        max-width: 100%;
+    }
+    #about div {
+        max-width: 100%;
+    }
+}
+.Services{
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+  
+}
+#Services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: yellowgreen;
+    padding: 30vh;
+}
+
+/* For devices with a max width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    #Services {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    #Services {
+        padding: 10px;
+    }
+    #Services > div {
+        width: 100%;  /* Ensure each service item takes full width on mobile */
+        margin-bottom: 20px;  /* Add space between each service */
+    }
+}
+
+#Services div a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#Services div a:hover{
+    background-color:darkblue;
+    color: aliceblue;
+    border: none;
+}
+#achievements {
+    background-color:cadetblue;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+
+.achievements h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.achievement-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.points {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#contact {
+    background-color: burlywood;
+    text-align: center;
+    padding: 10%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centering the section horizontally */
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    #contact {
+        padding: 8%;
+    }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    #contact {
+        padding: 5%;
+        text-align: left; /* Align text left on very small screens for better readability */
+    }
+}
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 2% 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #3498db;
+}
+
+.instagram-link {
+    margin-top: 20px;
+}
+
+.instagram-link a {
+    text-decoration: none;
+    color: #E1306C;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid gray;
+}
+
+.instagram-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.instagram-link a:hover {
+background: none;
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .footer-content ul {
+        text-align: center;
+    }
+
+    .footer-content ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
